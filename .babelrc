@@ -1,0 +1,27 @@
+{
+  "sourceMaps": "inline",
+  "plugins": [
+  ],
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+          /* , "browsers": [ */
+          /*   "last 2 Chrome versions" */
+          /* ] */
+        },
+        "modules": "commonjs",
+        "useBuiltIns": true,
+        "loose": false
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+    },
+    "production": {
+    }
+  }
+}

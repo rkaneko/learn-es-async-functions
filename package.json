@@ -1,0 +1,25 @@
+{
+  "name": "learn-es-async-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "transpile:js": "babel src --out-dir dist --source-maps",
+    "watch:transpile:js": "babel src --watch --out-dir dist --source-maps"
+  },
+  "keywords": [],
+  "author": "Ryota Kaneko <kanek.o.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "promise": "^7.1.1",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.8",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "fetch-mock": "^5.8.1"
+  }
+}
