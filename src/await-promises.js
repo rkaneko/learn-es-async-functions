@@ -8,3 +8,5 @@ async function asyncFunc() {
 asyncFunc()
   .then(x => console.log(x))
   .catch(err => console.error(err));
+
+module.exports = asyncFunc;

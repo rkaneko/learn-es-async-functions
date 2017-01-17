@@ -5,7 +5,22 @@
   "main": "index.js",
   "scripts": {
     "transpile:js": "babel src --out-dir dist --source-maps",
-    "watch:transpile:js": "babel src --watch --out-dir dist --source-maps"
+    "watch:transpile:js": "babel src --watch --out-dir dist --source-maps",
+    "test": "ava"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.spec.js"
+    ],
+    "concurrency": 5,
+    "powerAssert": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit",
+    "failFast": false,
+    "serial": false,
+    "verbose": false
   },
   "keywords": [],
   "author": "Ryota Kaneko <kanek.o.dev@gmail.com>",
@@ -16,8 +31,10 @@
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
+    "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
     "babel-preset-env": "^1.1.8",
+    "babel-register": "^6.18.0",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "fetch-mock": "^5.8.1"
